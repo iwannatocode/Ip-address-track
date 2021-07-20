@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    max-width: 1200px;
+}
 .app{
     height: 100vh;
     font-family: font_ligth;
