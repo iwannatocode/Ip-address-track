@@ -16,11 +16,11 @@ var app = new Vue({
 // crear mapa  
   	var mymap = L.map('map').setView([20.07372, -28.46533], 3);
   
-  	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+  	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}{r}?access_token={accessToken}', {
     	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     	maxZoom: 20,
     	id: 'mapbox/streets-v11',
-    	tileSize: 512,
+    	tileSize: 1024,
     	zoomOffset: -1,
     	accessToken: 'pk.eyJ1IjoiaXdhbm5hdG9jb2RlIiwiYSI6ImNrcmIxM3N2bjNrZm8ycHJ4aWttaGs0bHgifQ.vlvWrLKCK75U1Rl0wXO26Q'
   	}).addTo(mymap);
