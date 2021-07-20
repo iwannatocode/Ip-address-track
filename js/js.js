@@ -14,7 +14,7 @@ var app = new Vue({
 
 
 // crear mapa  
-  	var mymap = L.map('map').setView([20.07372, -28.46533], 3);
+  	var mymap = L.map('map').setView([29.07372, -10.46533], 3);
   
   	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}{r}?access_token={accessToken}', {
     	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -60,7 +60,7 @@ var app = new Vue({
 			app.location = resp.data.location.city + ' ' + resp.data.location.region;
 			app.time = 'UFC-' + resp.data.location.timezone;
 			
-			mymap.setView([lat, lng], 12);
+			mymap.setView([lat, lng], 15);
 			var marker = L.marker([lat, lng]).addTo(mymap);
 
 			console.log( resp.data  );
