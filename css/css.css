@@ -1,0 +1,135 @@
+@font-face {
+    font-family: font_ligth;
+    src: url(Rubik-Light.ttf);
+}
+@font-face {
+    font-family: font_mediun;
+    src: url(Rubik-SemiBold.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.app{
+    height: 100vh;
+    font-family: font_ligth;
+}
+.nav_bar::before{
+    content: "";
+    display: table;
+}
+.nav_bar{
+    background: url(../images/pattern-bg.png);
+    height: 31%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+h2{
+    margin-top: 18px;
+    color: white;
+    font-size: 25px;
+}
+.search{
+    display: inline;
+    width: 400px;
+    height: 42px;
+    padding: 15px;
+    border-radius: 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.search::placeholder{
+    color: rgb(168, 166, 166);
+}
+ .btn{
+    display: inline-block;
+    position: relative;
+    top: 18px;
+    height: 46px;
+    width: 48px;
+    border-radius: 0 12px 12px 0;
+    background: black url(../images/icon-arrow.svg) no-repeat 15px 15px;
+    margin-left: -10px;
+    border: none;
+    
+}
+.banner{
+    background-color: white;
+    color: black;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    border-radius: 12px;
+    margin: 35px auto;
+    height: 128px;
+    box-shadow: 0 0 10px 1px gray ;
+    z-index: 3;
+}
+.banner .head_cont{
+    width: 25%;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    padding: 12px 0 5px 0;
+}
+.banner .head{
+    /* border: 1px solid black; */
+    margin: 8px 0 0 0;
+    height: 77px;
+    padding: 0 10px 0;
+    font-size: 18px;
+    color: hsl(0, 0%, 17%);
+    font-weight: 550;
+    font-family: font_mediun;
+        
+}
+.ip, .location, .time{
+    border-right: 1px solid rgb(219, 217, 217) ;
+}
+.map{
+    height: 69%;
+    position: relative;
+    z-index: 1;
+}
+@media screen and ( max-width: 810px ) and ( min-width: 700px ){
+    .banner .head_cont{
+        font-size: 10px;
+    }
+    .banner .head{
+        font-size: 15px;        
+    }
+}
+@media screen and ( max-width: 699px ){
+    html{
+        min-width: 360px;
+    }
+    .search{
+        width: 60%;
+    }
+    .banner{
+        flex-direction: column;
+        width: 70%;
+        height: 250px;
+        margin-top: 20px;
+    }
+    .banner .head_cont{
+        width: 100%;
+        font-size: 11px;
+        padding: 7px 0 0px 0;
+    }
+    .banner .head{
+        /* border: 1px solid black; */
+        margin: 0px 0 0 0;
+        height: 39px;
+        padding: 0 10px 0;
+        font-size: 16px;
+        color: black;
+        font-weight: bolder;
+            
+    }    
+}
