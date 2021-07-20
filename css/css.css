@@ -93,6 +93,7 @@ h2{
     border-right: 1px solid rgb(219, 217, 217) ;
 }
 .map{
+    width: 100vw;
     height: 69%;
     position: relative;
     z-index: 1;
