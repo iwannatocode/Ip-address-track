@@ -20,7 +20,7 @@ var app = new Vue({
     	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     	maxZoom: 20,
     	id: 'mapbox/streets-v11',
-    	tileSize: 1024,
+    	tileSize: 512,
     	zoomOffset: -1,
     	accessToken: 'pk.eyJ1IjoiaXdhbm5hdG9jb2RlIiwiYSI6ImNrcmIxM3N2bjNrZm8ycHJ4aWttaGs0bHgifQ.vlvWrLKCK75U1Rl0wXO26Q'
   	}).addTo(mymap);
