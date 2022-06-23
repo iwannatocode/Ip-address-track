@@ -1,68 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | IP Address Tracker</title>
 
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <link rel="stylesheet" href="css/css.css">
 
 </head>
 
-    <div class="app" id="app1">
-        <div class="nav_bar">
-            <h2>IP Address Tracker</h2>
-            <div class="search_cont">
+<div class="app" id="app1">
+    <div class="nav_bar">
+        <h2>IP Address Tracker</h2>
+        <div class="search_cont">
+            <div class="busqueda_cont">
                 <input class="search" type="text" placeholder="Search for any IP address or domain">
                 <div class="btn"></div>
             </div>
-            <div class="banner">
-                <div class="head_cont">
-                    <h3>IP Address</h3>
-                    <div class="ip head" >{{ip}}</div>
-                </div>
-                <div class="head_cont">
-                    <h3>Location</h3>
-                    <div class="location head">{{location}}</div>
-                </div>
-                <div class="head_cont">
-                    <h3>Timezone</h3>
-                    <div class="time head">{{time}}</div>
-                </div>
-                <div class="head_cont">
-                    <h3>ISP</h3>
-                    <div class="isp head">{{isp}}</div>
-                </div>
+        </div>
+        <div class="banner">
+            <div class="head_cont">
+                <h3>IP Address</h3>
+                <div class="ip head">{{ip}}</div>
+            </div>
+            <div class="head_cont">
+                <h3>Location</h3>
+                <div class="location head">{{location}}</div>
+            </div>
+            <div class="head_cont">
+                <h3>Timezone</h3>
+                <div class="time head">{{time}}</div>
+            </div>
+            <div class="head_cont">
+                <h3>ISP</h3>
+                <div class="isp head">{{isp}}</div>
             </div>
         </div>
-
-        <div id="map" class="map"></div>
     </div>
 
-  
+    <div id="map" class="map"></div>
+</div>
 
 
 
- <script src="js/jquery-3.5.1.min.js"></script>
- <script src="js/axios.min.js"></script>
- <script src="js/vue.min.js"></script>
 
- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
- integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
- crossorigin=""></script>
 
-  <script src="js/js.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/vue.min.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+<script src="js/js.js"></script>
 </body>
+
 </html>
